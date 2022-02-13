@@ -1,6 +1,8 @@
 package main
 
 import (
+	"fmt"
+
 	"github.com/kyokomi/emoji/v2"
 )
 
@@ -9,6 +11,6 @@ func GetMessage() string {
 }
 
 func main() {
-	var text string = GetMessage()
-	emoji.Println(text)
+	var text string = emoji.Sprint(GetMessage())
+	fmt.Println(text)
 }
